@@ -2,20 +2,24 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def frequencies(items):
-  
-
+    
     frequency_dictonary = {}
+
+   
     for item in items:
-       item_str = str(item)
+       
+        item_string = str(item)
 
-        if item_str in frequency_dictionary:
-           frequency_dictonary[item_str] += 1
+       
+        if item_string in frequency_dict:
+            
+            frequency_dictonary[item_string] += 1
         else:
-            frequency_dictonary[item_str] = 1
+            
+            frequency_dictonary[item_string] = 1
 
-    return frequency_dictonary
+    return frequency_dictionary
 
-# Test cases
+
 result = frequencies(['a', 'a', 'b', 'b', 'b', 'c'])
-print(result)  
-    return frequencies
+print(result) 
