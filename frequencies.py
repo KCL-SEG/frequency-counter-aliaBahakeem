@@ -2,7 +2,7 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def frequencies(items):
-    frequencies = {} 
+  
 
     frequency_dictonary = {}
     for item in items:
