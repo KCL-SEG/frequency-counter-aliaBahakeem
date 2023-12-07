@@ -1,25 +1,17 @@
-"""Frequencies function."""
-"""ENTER YOUR SOLUTION HERE!"""
-
 def frequencies(items):
-    
-    frequency_dictonary = {}
-
-   
+    frequencies = {}
     for item in items:
-       
-        item_string = str(item)
+        item_str = str(item)
 
-       
-        if item_string in frequency_dict:
-            
-            frequency_dictonary[item_string] += 1
+        if item_str in frequencies:
+            frequencies[item_str] += 1
         else:
-            
-            frequency_dictonary[item_string] = 1
+            frequencies[item_str] = 1
 
-    return frequency_dictionary
+    return frequencies
 
+print(frequencies(['a', 'a', 'b', 'b', 'b', 'c']))
+# This will output: { 'a': 2, 'b': 3, 'c': 1 }
 
-result = frequencies(['a', 'a', 'b', 'b', 'b', 'c'])
-print(result) 
+print(frequencies([100, 'Hello', '100', '100', 100]))
+# This will output: { '100': 4, 'Hello': 1 }
